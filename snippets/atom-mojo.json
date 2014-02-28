@@ -1,0 +1,50 @@
+{
+  ".source.perl.mojolicious": {
+    "Any": {
+      "prefix": "any",
+      "body": "any '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+    },
+    "Get": {
+      "prefix": "get",
+      "body": "get '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+    },
+    "LiteApp": {
+      "prefix": "app",
+      "body": "#!/usr/bin/env perl\nuse Mojolicious::Lite;\n\n$1\n\napp->start;\n__DATA__"
+    },
+    "Post": {
+      "prefix": "post",
+      "body": "post '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+    },
+    "Render": {
+      "prefix": "render",
+      "body": "\\$self->render(${1:text} => '${2:Hello Mojo!}');",
+    }
+  },
+  ".text.html.mojolicious": {
+    "Code": {
+      "prefix": "c",
+      "body": "<% $1 %>"
+    },
+    "End Block": {
+      "prefix": "e",
+      "body": "<% end %>"
+    },
+    "Expression": {
+      "prefix": "x",
+      "body": "<%= $1 %>"
+    },
+    "Start Block": {
+      "prefix": "b",
+      "body": "<% $1 begin %>\n    $2\n${3:<% end %>}"
+    },
+    "Start Expression Block": {
+      "prefix": "xb",
+      "body": "<%= $1 begin %>\n    $2\n${3:<% end %>}"
+    },
+    "Template": {
+      "prefix": "t",
+      "body": "@@ $1${2:.html.ep}\n$3"
+    }
+  }
+}

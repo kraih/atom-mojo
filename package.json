@@ -1,0 +1,10 @@
+{
+  "name": "language-mojolicious",
+  "version": "0.1.0",
+  "description": "Mojolicious for Atom.",
+  "repository": "https://github.com/kraih/atom-mojo",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

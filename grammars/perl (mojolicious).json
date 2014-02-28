@@ -1,0 +1,31 @@
+{
+  "fileTypes": ["pl", "pm", "t"],
+  "foldingStartMarker": "(/\\*|(\\{|\\[|\\()\\s*$)",
+  "foldingStopMarker": "(\\*/|^\\s*(\\}|\\]|\\)))",
+  "name": "Perl (Mojolicious)",
+  "patterns": [
+    {
+      "begin": "^__DATA__$\\n?",
+      "end": "^__END__$\\n?",
+      "name": "text.html.mojolicious.block",
+      "patterns": [
+        {
+          "captures": {
+            "1": {
+              "name": "comment.mojolicious"
+            }
+          },
+          "match": "(^@@.*)",
+          "name": "source.perl.mojolicious.comment"
+        },
+        {
+          "include": "text.html.mojolicious"
+        }
+      ]
+    },
+    {
+      "include": "source.perl"
+    }
+  ],
+  "scopeName": "source.perl.mojolicious"
+}
