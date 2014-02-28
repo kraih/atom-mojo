@@ -2,11 +2,11 @@
   ".source.perl.mojolicious": {
     "Any": {
       "prefix": "any",
-      "body": "any '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+      "body": "any '${1:/}' => sub {\n  my $self = shift;\n  $2\n};"
     },
     "Get": {
       "prefix": "get",
-      "body": "get '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+      "body": "get '${1:/}' => sub {\n  my $self = shift;\n  $2\n};"
     },
     "LiteApp": {
       "prefix": "app",
@@ -14,11 +14,11 @@
     },
     "Post": {
       "prefix": "post",
-      "body": "post '${1:/}' => sub {\n  my \\$self = shift;\n  $2\n};"
+      "body": "post '${1:/}' => sub {\n  my $self = shift;\n  $2\n};"
     },
     "Render": {
       "prefix": "render",
-      "body": "\\$self->render(${1:text} => '${2:Hello Mojo!}');",
+      "body": "$self->render(${1:text} => '${2:Hello Mojo!}');"
     }
   },
   ".text.html.mojolicious": {

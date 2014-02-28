@@ -1,6 +1,6 @@
 {
   "name": "language-mojolicious",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Atom support for the Mojolicious real-time web framework.",
   "repository": "https://github.com/kraih/atom-mojo",
   "engines": {
