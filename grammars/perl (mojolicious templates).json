@@ -3,7 +3,7 @@
   "name": "Perl (Mojolicious Templates)",
   "patterns": [
     {
-      "begin": "(<%={,2})",
+      "begin": "(<%{1,2}={,2})",
       "beginCaptures": {
         "0": {
           "name": "support.begin.mojolicious"
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "begin": "^(%={,2})",
+      "begin": "^(%{1,2}={,2})",
       "beginCaptures": {
         "0": {
           "name": "support.begin.mojolicious"
