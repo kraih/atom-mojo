@@ -51,6 +51,9 @@
           "include": "source.perl"
         }
       ]
+    },
+    {
+      "include": "text.html.basic"
     }
   ],
   "scopeName": "text.html.mojolicious"
